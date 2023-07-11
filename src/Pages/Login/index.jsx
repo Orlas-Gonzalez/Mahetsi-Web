@@ -68,7 +68,7 @@ function Login() {
       <Container fluid>
         <h1>
           Conoce nuestras<br/>promociones por mayoreo
-          <img className="center" src={imagen1}/>
+          <img className="center" src={img2}/>
         </h1>
       </Container>
     </Container>
