@@ -1,0 +1,12 @@
+.imgLogo {
+    width: 24%;
+  }
+  .backgroundNav {
+    background-color:#96a42c3c;
+  }
+  .buttonNav {
+    margin-left: 2%;
+    margin-right: 2%;
+    size: 'sm';
+    
+  }

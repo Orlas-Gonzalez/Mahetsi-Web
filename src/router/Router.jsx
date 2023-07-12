@@ -8,6 +8,7 @@ import Buy from "../Pages/Buy";
 import Contact from "../Pages/Contact";
 import Test from "../Pages/Responsivo";
 
+
 function Router() {
   return (
     <BrowserRouter>

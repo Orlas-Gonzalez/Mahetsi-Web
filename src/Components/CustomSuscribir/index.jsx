@@ -1,20 +1,17 @@
-import styles from "./Test.module.css";
-import { Card, Container } from "react-bootstrap";
-import Carousel from "react-bootstrap/Carousel";
-import imagen1 from "../../assets/arcos.jpg";
-import imagen2 from "../../assets/verduras.jpg";
-import imagen3 from "../../assets/ima3.jpg";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import styles from "./CustomSuscribir.module.css";
+import { Card, Container } from "react-bootstrap";
 
-function Test() {
+function CustomSuscribir() {
   return (
     <Container center>
       <Card style={{ width: "32rem" }}>
-        <Card.Body >
+        <Card.Body>
           <Card.Text>
-            Suscribete!!<br/>
+            Suscribete!!
+            <br />
             Recibe promociones y beneficios exclusivos
           </Card.Text>
           <InputGroup className="mb-3">
@@ -32,4 +29,5 @@ function Test() {
     </Container>
   );
 }
-export default Test;
+
+export default CustomSuscribir;

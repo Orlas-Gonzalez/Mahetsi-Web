@@ -8,7 +8,7 @@
 
 .textTitle{
   justify-content: space-between;
-  text-align: center;
+  float: center;
   text-size-adjust: 100;
 }
 
@@ -16,6 +16,13 @@
   width: 100%;
   height: 10vh;
   padding: 0! important;
+}
+
+.imgCont3{
+  width:350px;
+  height:fit-content;
+  transform: rotate(90deg);
+  float: right;
 }
 
 .fontTitle {
