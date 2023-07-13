@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import imagen from "../../assets/LOGO.png";
-import styles from "./CustomNavbarBottom.module.css";
+import styles from "./CustomFooter.module.css";
 
 function Footer() {
   return (
@@ -29,7 +29,7 @@ function Footer() {
           </div>
           <div className="col-md-6 col-lg-3 col-12 ft-2">
             <h3>
-              <span>Ayuda</span>
+              <span>Ayuda</span> 
             </h3>
             <Button variant="link" href="/">
               Términos y condiciones

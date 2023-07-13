@@ -7,6 +7,18 @@
     align-items: center;
 }
 
+.imagenCirculo1{
+  width: 70vh;
+  height: 70vh;
+  float: left;
+}
+
+.imagenCirculo2{
+  width: 70vh;
+  height: 70vh;
+  float: right;
+}
+
 
 @media (max-width: 800px) {
     .contResponsive {

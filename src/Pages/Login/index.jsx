@@ -19,7 +19,7 @@ import img3 from "../../assets/Gift.jpeg";
 import styles from "./Login.module.css";
 import CustomCardgroupProducts from "../../Components/CustomCardgroupProducts";
 import CustomSuscribir from "../../Components/CustomSuscribir";
-import Footer from "../../Components/CustomNavbarBottom";
+import Footer from "../../Components/CustomFooter";
 
 function Login() {
   const [index, setIndex] = useState(0);
