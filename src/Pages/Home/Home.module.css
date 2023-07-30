@@ -1,3 +1,45 @@
 .conRoot {
   background-color: var(--bgTest);
 }
+.contCar {
+  padding: 0! important;
+  height: 50%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.textTitle{
+justify-content: space-between;
+float: center;
+text-size-adjust: 100;
+}
+
+.imgCont2{
+width: 100%;
+height: 10vh;
+padding: 0! important;
+}
+
+.imgCont3{
+width:350px;
+height:fit-content;
+transform: rotate(90deg);
+float: right;
+}
+
+.fontTitle {
+font-size: x-large;
+}
+.card {
+width: 20rem;
+margin: 10%;
+}
+.imgCard {
+width: 50%;
+
+margin-left: 10%;
+padding-left: 20%;
+padding-top: 10%;
+padding-left: 10%;
+}
