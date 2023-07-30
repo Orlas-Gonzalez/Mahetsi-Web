@@ -5,8 +5,9 @@ import About from "../Pages/About";
 import Products from "../Pages/Products";
 import Login from "../Pages/Login";
 import Buy from "../Pages/Buy";
-import Contact from "../Pages/Contact";
+import Ingresar from "../Pages/Ingresar";
 import Test from "../Pages/Responsivo";
+import Help from "../Pages/Help";
 
 
 function Router() {
@@ -16,7 +17,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/responsive" element={<Test/>} />
+        <Route path="/responsive" element={<Help/>} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import Styles from "./Ingresar.modules.css";
 
 const Contact = () => {
     return (

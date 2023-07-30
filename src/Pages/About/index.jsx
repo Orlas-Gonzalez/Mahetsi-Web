@@ -88,9 +88,7 @@ function About() {
           </div>
         </div>
       </Container>
-      <Container>
-        <Footer />
-      </Container>
+      <Footer />
     </Container>
   );
 }
