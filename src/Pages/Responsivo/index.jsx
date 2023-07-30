@@ -13,6 +13,7 @@ import logo1 from "../../assets/CrueltyFree.png";
 import logo2 from "../../assets/IngredientesNat.png";
 import logo3 from "../../assets/Productores.png";
 import CustomCardgroupProducts from "../../Components/CustomCardgroupProducts";
+import Footer from "../../Components/CustomFooter";
 
 function Test() {
   return (
@@ -92,8 +93,8 @@ function Test() {
           </div>
         </div>
       </Container>
-      <Container>
-
+      <Container fluid>
+        <Footer />
       </Container>
     </Container>
   );

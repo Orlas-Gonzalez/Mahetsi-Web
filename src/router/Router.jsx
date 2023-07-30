@@ -16,7 +16,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/responsive" element={<Test/>} />
+        <Route path="/responsive" element={<About/>} />
       </Routes>
     </BrowserRouter>
   );
