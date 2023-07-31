@@ -8,6 +8,9 @@ import Buy from "../Pages/Buy";
 import Ingresar from "../Pages/Ingresar";
 import Test from "../Pages/Responsivo";
 import Help from "../Pages/Help";
+import Politica from "../Pages/Politica";
+import Terminos from "../Pages/Terminos";
+import Devoluciones from "../Pages/Devoluciones";
 
 
 function Router() {
@@ -17,7 +20,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/responsive" element={<Help/>} />
+        <Route path="/responsive" element={<Devoluciones/>} />
       </Routes>
     </BrowserRouter>
   );
