@@ -11,7 +11,7 @@ import Help from "../Pages/Help";
 import Politica from "../Pages/Politica";
 import Terminos from "../Pages/Terminos";
 import Devoluciones from "../Pages/Devoluciones";
-
+import Mayoreo from "../Pages/Mayoreo";
 
 function Router() {
   return (
@@ -20,7 +20,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/responsive" element={<Devoluciones/>} />
+        <Route path="/responsive" element={<Test/>} />
       </Routes>
     </BrowserRouter>
   );

@@ -8,14 +8,20 @@
 }
 
 .imagenCirculo1{
-  width: 70vh;
-  height: 70vh;
-  float: left;
+  width: 65vh;
+  height: 65vh;
+  float: right;
 }
 
 .imagenCirculo2{
-  width: 70vh;
-  height: 70vh;
+  width: 55vh;
+  height: 55vh;
+  float: right;
+}
+
+.imagenCirculo3{
+  width: 40vh;
+  height: 40vh;
   float: right;
 }
 

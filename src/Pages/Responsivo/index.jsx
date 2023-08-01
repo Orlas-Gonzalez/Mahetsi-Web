@@ -19,17 +19,31 @@ function Test() {
   return (
     <Container fluid center>
       <Container fluid center>
-        <p align="center">
+        <p>
           <br />
-          <b>Devoluciones y Reembolso</b>
+          <h1>Crea tu cuenta, es gratis!!</h1>
+          <br/>
+          Regístrate con Google o Facebook
         </p>
-      </Container>
-      <Container fluid>
-        <p align="center">
-          <b>Política de Devolución y Reembolso</b>
-          <br />
-          <br />
-        </p>
+        <Card style={{ width: "32rem" }}>
+          <Card.Body>
+            <Card.Text>
+              Suscribete!!
+              <br />
+              Recibe promociones y beneficios exclusivos
+            </Card.Text>
+            <InputGroup className="mb-3">
+              <Form.Control
+                placeholder="Email@ejemplo.com"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <Button variant="outline-secondary" id="button-addon2">
+                Suscribir
+              </Button>
+            </InputGroup>
+          </Card.Body>
+        </Card>
       </Container>
       <Footer />
     </Container>
