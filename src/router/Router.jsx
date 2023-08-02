@@ -12,6 +12,7 @@ import Politica from "../Pages/Politica";
 import Terminos from "../Pages/Terminos";
 import Devoluciones from "../Pages/Devoluciones";
 import Mayoreo from "../Pages/Mayoreo";
+import Registrar from "../Pages/Ingresar";
 
 function Router() {
   return (

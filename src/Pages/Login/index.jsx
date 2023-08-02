@@ -1,103 +1,56 @@
-import { useState } from "react";
-import {
-  Container,
-  Carousel,
-  Image,
-  Button,
-  Card,
-  Col,
-  Row,
-  CardGroup,
-  Figure,
-} from "react-bootstrap";
-import imagen1 from "../../assets/arcos.jpg";
-import imagen2 from "../../assets/verduras.jpg";
-import imagen3 from "../../assets/ima3.jpg";
-import img1 from "../../assets/sky.jpg";
-import img2 from "../../assets/Varios.jpeg";
-import img3 from "../../assets/Gift.jpeg";
-import styles from "./Login.module.css";
-import CustomCardgroupProducts from "../../Components/CustomCardgroupProducts";
-import CustomSuscribir from "../../Components/CustomSuscribir";
+import { Card, Container, Image, Row, Col } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import img1 from "../../assets/InicioSesion.jpg";
 import Footer from "../../Components/CustomFooter";
 
 function Login() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
   return (
-    <Container fluid className={styles.contCar}>
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
-          <img className="d-block w-100" src={imagen1} alt="First slide" />
-          <Carousel.Caption>
-            <h3 text={styles.textTitle}>Jabones y Productos Artesanales</h3>
-            <p>100% Mexicanos </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={imagen2} alt="Second slide" />
-
-          <Carousel.Caption>
-            <h3 className={styles.fondTitle}>
-              Productos Naturales <br /> Libres de BPA
-            </h3>
-            <p>100% Mexicanos </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={imagen3} alt="Third slide" />
-
-          <Carousel.Caption>
-            <h3>
-              Colaboración con
-              <br />
-              Huertos y Mercados Orgánicos
-            </h3>
-            <p>100% Mexicanos </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-      <Container fluid className={styles.contCar}>
-        <h1>
-          <img className={styles.imgCont2} src={img1} alt="Third slide" />
-        </h1>
-        <h1 className={styles.textTitle}>
-          {" "}
-          Mahetsi <br />
-          significa cielo en otomí, <br /> la cual fue la lengua del estado de
-          Querétaro, <br /> de donde es orgullosamente la marca
-        </h1>
-        <h1>
-          <img className={styles.imgCont2} src={img1} alt="Third slide" />
-        </h1>
-      </Container>
-      <CustomCardgroupProducts />
-      <Container fluid>
-        <img className={styles.imgCont3} src={img2} />
-        <h1>
-          Conoce nuestras
+    <Container fluid center>
+      <Container fluid center>
+        <p>
           <br />
-          promociones por mayoreo
-        </h1>
-      </Container>
-      <Container fluid>
-        <img width={350} height:fit-content src={img3} />
-        <h1 clear:center>
-          Destaca tus eventos con nuestros
+          <h1>Iniciar Sesión</h1>
           <br />
-          Productos personalizados!
-        </h1>
+          Iniciar sesión con Google o Facebook
+        </p>
+        <div align="right">
+          <p align="right">Aún no tienes cuenta?</p>
+          <Button align="right" variant="primary" type="submit">
+            Registrarse
+          </Button>
+          <img width={350} height:fit-content src={img1} />
+        </div>
+        <div>
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-facebook fa-lg"></i>
+        </div>
+        <Form>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Correo Electrónico</Form.Label>
+            <Form.Control type="email" placeholder="email@ejemplo.com" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>Contraseña</Form.Label>
+            <Form.Control
+              type="password"
+              placeholder="Al menos 6 letras, 1 caracter especial y 1 número"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicCheckbox">
+            <Form.Check type="checkbox" label="Acepto términos y condiciones" />
+          </Form.Group>
+          <Button variant="primary" type="submit">
+            Entrar
+          </Button>
+          <Button variant="link" href="/">
+              Olvide mi contraseña
+            </Button>
+        </Form>
       </Container>
-      <Container>
-        <CustomSuscribir/>
-      </Container>
-      <Footer/>
+      <Footer />
     </Container>
   );
 }
-
 export default Login;

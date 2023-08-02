@@ -21,29 +21,10 @@ function Test() {
       <Container fluid center>
         <p>
           <br />
-          <h1>Crea tu cuenta, es gratis!!</h1>
-          <br/>
-          Regístrate con Google o Facebook
+          <h1>Iniciar Sesión</h1>
+          <br />
+          Iniciar sesión con Google o Facebook
         </p>
-        <Card style={{ width: "32rem" }}>
-          <Card.Body>
-            <Card.Text>
-              Suscribete!!
-              <br />
-              Recibe promociones y beneficios exclusivos
-            </Card.Text>
-            <InputGroup className="mb-3">
-              <Form.Control
-                placeholder="Email@ejemplo.com"
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-              />
-              <Button variant="outline-secondary" id="button-addon2">
-                Suscribir
-              </Button>
-            </InputGroup>
-          </Card.Body>
-        </Card>
       </Container>
       <Footer />
     </Container>
