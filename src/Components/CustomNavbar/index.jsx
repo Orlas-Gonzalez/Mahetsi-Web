@@ -8,16 +8,28 @@ import Col from "react-bootstrap/Col";
 import imagen from "../../assets/LOGO.png";
 import { Image } from "react-bootstrap";
 import styles from "./CustomNavbar.module.css";
+import { PiUserCircleDuotone, PiShoppingBagDuotone, PiQuestionDuotone } from "react-icons/pi";
 
 function Nave() {
   return (
     <Navbar expand="lg" fluid className={styles.backgroundNav} variant="light">
-      <Container>
-        <Navbar.Brand href="#home"><Image src={imagen} className={styles.imgLogo} /></Navbar.Brand>
-        <Row>
+      <Container fluid className={styles.contRoot}>
+        <Navbar.Brand>
+          <Image src={imagen} className={styles.imgLogo} />
+        </Navbar.Brand>
+        <Container className={styles.contButtons}>
+          <Button className={styles.buttonNav}>Inicio</Button>
+          <Button className={styles.buttonNav}>Conocenos</Button>
+          <Button className={styles.buttonNav}>Productos</Button>
+          <Button className={styles.buttonNav}>Mayoreo</Button>
+          <PiUserCircleDuotone className={styles.iconsNav} />
+          <PiShoppingBagDuotone className={styles.iconsNav} />
+          <PiQuestionDuotone className={styles.iconsNav} />
+        </Container>
+        {/* <Row>
           <Col xs={6}>
             <Nav className="me-auto">
-              <Button variant="outline-secondary" className={styles.buttonNav}>
+              <Button  className={styles.buttonNav}>
                 <Nav.Link href="#home">Conocenos</Nav.Link>
               </Button>
               <Button variant="outline-secondary" className={styles.buttonNav}>
@@ -34,7 +46,7 @@ function Nave() {
               </Button>
             </Nav>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Navbar>
   );

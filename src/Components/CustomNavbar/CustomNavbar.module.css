@@ -1,11 +1,40 @@
+.contRoot {
+  /* background-color: red; */
+}
+
+.contRoot .contButtons {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.contRoot .contButtons .buttonNav {
+  background-color: var(--backgroundMain);
+  border: none;
+  font-weight: bold;
+  color: gray;
+}
+
+.contRoot .contButtons .buttonNav:hover {
+  color: #303030;
+}
+
+.contRoot .contButtons .iconsNav {
+  font-size: 35px;
+  cursor: pointer;
+  transition: width 1s;
+}
+
+.contRoot .contButtons .iconsNav:hover {
+  width: 45px;
+}
+
 .imgLogo {
-  width: 24%;
+  width: 20%;
 }
+
 .backgroundNav {
-  background-color:#96a42c3c;
-}
-.buttonNav {
-  margin-left: 2%;
-  margin-right: 2%;
-  size: 'sm';
-}
+  background-color: var(--backgroundMain);
+} 
